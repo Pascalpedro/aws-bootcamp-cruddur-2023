@@ -17,7 +17,21 @@ This involves:
 
 - Created a billing alarm system using the SNS topic which triggers notifications when a certain threshold is surpassed using [aws sns create-topic](https://docs.aws.amazon.com/cli/latest/reference/sns/create-topic.html).
 
-To create a SNS Topic
+I created a SNS Topic by
+```sh
+aws sns create-topic --name billing-alarm
+```
+which returns a TopicARN
+
+I then create a subscription to supply the TopicARN and my Email
+```sh
+aws sns subscribe \
+    --topic-arn TopicARN \
+    --protocol email \    
+    --notification-endpoint my@email.com    
+```
+
+Then, i checked my email and confirm the subscription.
 
 - Configured the AWS CloudWatch metrics alarm which is a simple “pay for what you used” system. It doesn’t involve an up-front commitment or minimum fee. You will be charged at the end of the month for your usage.
 

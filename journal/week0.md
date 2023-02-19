@@ -11,8 +11,8 @@ Cost is a very sensitive issue that if not monitored might lead to the accumulat
 
 This involves:
 
-- (a) Verified services that are within the AWS free tier.
-- (b) Turned on Billing alerts to receive notifications via emails.
+- (a) Verified services that are within the AWS free tier by visiting https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all.
+- (b) Turned on Billing alerts to receive notifications via emails by going to the [Billing Page] (https://console.aws.amazon.com/billing/), navigate to the 'Billing preferences' and tick the "Receive Billing Alerts' box.
 - (c) Created a billing alarm system using the SNS topic which triggers notifications when a certain threshold is surpassed.
 - (d) Configured the AWS CloudWatch metrics alarm which is a simple “pay for what you used” system. It doesn’t involve an up-front commitment or minimum fee. You will be charged at the end of the month for your usage.
 - (e) Configured the AWS Budgeting pricing which is the max amount of cost that can be used in a particular task or a period.

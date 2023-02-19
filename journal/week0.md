@@ -11,11 +11,11 @@ Cost is a very sensitive issue that if not monitored might lead to the accumulat
 
 This involves:
 
-- Verified services that are within the AWS free tier by visiting [Free Tier](https://aws.amazon.com/free/)
+- Verified services that are within the AWS free tier by visiting [Free Tier](https://aws.amazon.com/free/).
 
 - Turned on Billing alerts to receive notifications via emails by going to the [Billing Page](https://console.aws.amazon.com/billing/) navigate to the 'Billing preferences' and tick the 'Receive Billing Alerts' box.
 
-- Created a billing alarm system using the SNS topic which triggers notifications when a certain threshold is surpassed using [aws sns create-topic](https://docs.aws.amazon.com/cli/latest/reference/sns/create-topic.html)
+- Created a billing alarm system using the SNS topic which triggers notifications when a certain threshold is surpassed using [aws sns create-topic](https://docs.aws.amazon.com/cli/latest/reference/sns/create-topic.html).
 
 To create a SNS Topic
 

@@ -7,13 +7,16 @@ This review serves as a prerequisite to the main project that we are about to em
 
 ## AWS Cost Managements: 
 
-Cost is a very sensitive issue that if not monitored might lead to the accumulation of unwanted billings within a time frame. Therefore, I set up measures that will curtail random, unplanned, and accumulation of expenses during the project. This involves:
-(a) Verified services that are within the AWS free tier.
-(b) Turned on Billing alerts to receive notifications via emails.
-(c) Created a billing alarm system using the SNS topic which triggers notifications when a certain threshold is surpassed.
-(d) Configured the AWS CloudWatch metrics alarm which is a simple “pay for what you used” system. It doesn’t involve an up-front commitment or minimum fee. You will be charged at the end of the month for your usage.
-(e) Configured the AWS Budgeting pricing which is the max amount of cost that can be used in a particular task or a period.
-(f) implemented the best practices for reviewing and monitoring our monthly billing systems.
+Cost is a very sensitive issue that if not monitored might lead to the accumulation of unwanted billings within a time frame. Therefore, I set up measures that will curtail random, unplanned, and accumulation of expenses during the project. 
+
+This involves:
+
+- (a) Verified services that are within the AWS free tier.
+- (b) Turned on Billing alerts to receive notifications via emails.
+- (c) Created a billing alarm system using the SNS topic which triggers notifications when a certain threshold is surpassed.
+- (d) Configured the AWS CloudWatch metrics alarm which is a simple “pay for what you used” system. It doesn’t involve an up-front commitment or minimum fee. You will be charged at the end of the month for your usage.
+- (e) Configured the AWS Budgeting pricing which is the max amount of cost that can be used in a particular task or a period.
+- (f) implemented the best practices for reviewing and monitoring our monthly billing systems.
 
 ## AWS Security:
 

@@ -1,10 +1,8 @@
-# AWS CLOUD PROJECT BOOTCAMP!!!
 # WEEK 0 - BILLINGS & ARCHITECTURE!!!
+### THIS IS A REVIEW WEEK
 
- a training program designed to escalate and help AWS Cloud Practitioners & Cloud-computing enthusiasts (who already have a fundamental knowledge of AWS cloud concepts and other IT-related scopes) get exposed to hands-on practices and real-life projects using tools and scenarios that are applicable in a working organization.
-The short-term goal of the Bootcamp project is to design and implement an app named “CRUDDUR”, a micro-blogging platform that will incorporate multiple AWS Cloud services and practices while its long-term goal is targeting to equip the trainees with advanced real-life scenario tech skills that will scale them over to a corporate AWS Cloud working environment.
+- This serves as a review of AWS basic Cloud settings and some necessary tools required for an efficient workload.
 
-The boot camp kicked off a few days ago and we had a review of AWS basic Cloud settings and some necessary tools required for an efficient workload.
 This review (informally called week zero by the instructor) serves as a prerequisite to the main project that we are about to embark on. These reviews focused on these four major areas which are:
 
 (1). AWS Cost Managements: cost is a very sensitive issue that if not monitored might lead to the accumulation of unwanted billings within a time frame. Therefore, I set up measures that will curtail random, unplanned, and accumulation of expenses during the project. This involves:

@@ -16,8 +16,10 @@ This involves:
 ![AWS Free Tier](../_docs/images/AWS-Free-Tier.JPG)
 
 - Turned on Billing alerts to receive notifications via emails by going to the [Billing Page](https://console.aws.amazon.com/billing/) navigate to the 'Billing preferences' and tick the 'Receive Billing Alerts' box.
+![AWS Billing Preferences](../_docs/images/AWS-Billing-Pref.JPG)
 
 - Created a billing alarm system using the SNS topic which triggers notifications when a certain threshold is surpassed using [aws sns create-topic](https://docs.aws.amazon.com/cli/latest/reference/sns/create-topic.html).
+![AWS SNS TOPIC](../_docs/images/)
 
 I created a SNS Topic by
 ```sh

@@ -12,6 +12,7 @@ Cost is a very sensitive issue that if not monitored might lead to the accumulat
 This involves:
 
 - Verified services that are within the AWS free tier by visiting [Free Tier](https://aws.amazon.com/free/).
+![AWS Free Tier](_docs/images/AWS-Free-Tier.jpg)
 
 - Turned on Billing alerts to receive notifications via emails by going to the [Billing Page](https://console.aws.amazon.com/billing/) navigate to the 'Billing preferences' and tick the 'Receive Billing Alerts' box.
 

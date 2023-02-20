@@ -23,7 +23,7 @@ aws sns create-topic --name billing-alarm
 ```
 which returns a TopicARN
 
-I then create a subscription to supply the TopicARN and my Email
+I then created a subscription to supply the TopicARN and my Email
 ```sh
 aws sns subscribe \
     --topic-arn TopicARN \
@@ -33,7 +33,7 @@ aws sns subscribe \
 
 Then, i checked my email and confirm the subscription.
 
-- Configured the AWS CloudWatch metrics alarm which is a simple “pay for what you used” system. It doesn’t involve an up-front commitment or minimum fee. You will be charged at the end of the month for your usage.
+- Configured the AWS CloudWatch metrics alarm which is a simple “pay for what you used” system by going to [aws cloudwatch put-metric-alarm](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html). It doesn’t involve an up-front commitment or minimum fee. You will be charged at the end of the month for your usage.
 
 - Configured the AWS Budgeting pricing which is the max amount of cost that can be used in a particular task or a period.
 

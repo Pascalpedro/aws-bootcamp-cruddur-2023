@@ -7,7 +7,10 @@ This review serves as a prerequisite to the main project that we are about to em
 
 ## AWS Cost Managements: 
 
-Cost is a very sensitive issue that if not monitored might lead to the accumulation of unwanted billings within a time frame. Therefore, I set up measures that will curtail random, unplanned, and accumulation of expenses during the project. 
+Cost is a very sensitive issue that if not monitored might lead to the accumulation of unwanted billings within a time frame.
+![AWS Cost Management](../_docs/images/AWS-Cost.JPG)
+
+Therefore, I set up measures that will curtail random, unplanned, and accumulation of expenses during the project. 
 
 This involves:
 
@@ -43,7 +46,11 @@ Then, i checked my email and confirm the subscription.
 - Configured the AWS Budgeting pricing which is the max amount of cost that can be used in a particular task or a period.
 ![AWS Budgets](../_docs/images/AWS-Budgets.JPG)
 
-- Implemented the best practices for reviewing and monitoring our monthly billing systems.
+- Implemented the best practices for reviewing and monitoring our monthly billing systems. 
+![AWS Billing Summary](../_docs/images/AWS-Billing_Dashboard.JPG)
+![](../_docs/images/AWS-Bills-Summary.JPG)
+![](../_docs/images/AWS-Bills.JPG)
+
 
 ## AWS Security:
 

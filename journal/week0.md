@@ -54,11 +54,16 @@ Then, i checked my email and confirm the subscription.
 
 ## AWS Security:
 
-This involves measures and precautions taken to avoid data loss, data breach, and tampering of credentials by third parties.
-This involves:
-(a) Made sure that the root user isn’t actively in use by setting up an IAM user account.
-(b) Set up a user group with Admin privileges.
+This involves measures and precautions taken to avoid data loss, data breach, and tampering of credentials by third parties. Measures such as:
+- Made sure that the root user isn’t actively in use by setting up an IAM user account.
+![IAM User Account](../_docs/images/IAM_user.JPG)
+
+- Set up a user group with Admin privileges.
+![IAM User Group](../_docs/images/AWS-User-Group.JPG)
+
 (c) Enabled Admin privileges on the IAM user account and enable certain policies which are required for full functionalities.
+![IAM Admin Privileges](../_docs/images/AWS-User.JPG)
+
 (d) Enabled an MFA on the IAM user for a 2FA.
 (e) Set up AWS credentials using AWS environment variables.
 

@@ -38,8 +38,10 @@ Then, i checked my email and confirm the subscription.
 ![AWS SNS SUBSCRIPTION](../_docs/images/AWS-SNS-SUB.JPG)
 
 - Configured the AWS CloudWatch metrics alarm which is a simple “pay for what you used” system by going to [aws cloudwatch put-metric-alarm](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html). It doesn’t involve an up-front commitment or minimum fee. You will be charged at the end of the month for your usage.
+![AWS CloudWatch Alarms](../_docs/images/AWS-CloudWatch-Alarms.JPG)
 
 - Configured the AWS Budgeting pricing which is the max amount of cost that can be used in a particular task or a period.
+![AWS Budgets](../_docs/images/AWS-Budgets.JPG)
 
 - Implemented the best practices for reviewing and monitoring our monthly billing systems.
 

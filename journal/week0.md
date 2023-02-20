@@ -61,17 +61,29 @@ This involves measures and precautions taken to avoid data loss, data breach, an
 - Set up a user group with Admin privileges.
 ![IAM User Group](../_docs/images/AWS-User-Group.JPG)
 
-(c) Enabled Admin privileges on the IAM user account and enable certain policies which are required for full functionalities.
+- Enabled Admin privileges on the IAM user account and enable certain policies which are required for full functionalities.
 ![IAM Admin Privileges](../_docs/images/AWS-User.JPG)
 
-(d) Enabled an MFA on the IAM user for a 2FA.
-(e) Set up AWS credentials using AWS environment variables.
+- Enabled an MFA on the IAM user for a 2FA.
+![MFA Authen](../_docs/images/IAM_user.JPG)
 
-## AWS Usage: 
+- Set up AWS credentials using AWS environment variables.
+
+
+## AWS Terminal: 
 The AWS Cloud is made up of servers that are mainly running on the Linux OS and tools such as:
-(a) AWS Cloud Shell, a browser-based shell, used in running scripts with the AWS Command Line Interface (CLI).
-(b) Created a Git repo for the project where the documentations and source codes for the entire app will be stored. Also integrated my Git account with Gitpod, a cloud development environment that provides online virtual computers for coding and development. Its isolates you from your local environs.
-I made sure I got familiar with the AWS CLI which runs on Linux OS by default and was able to initiate commands comfortably. Also linked my AWS CLI with my Gitpod CDE by creating a “.gitpod.yml file” which automatically integrates the AWS CLI setting into my Gitpod account.
+- AWS Cloud Shell, a browser-based shell, used in running scripts with the AWS Command Line Interface (CLI).
+Made sure i was able to access it using my IAM user account.
+![AWS CLI](../_docs/images/AWS-CLI.JPG)
+
+- Created a Git repo for the project where the documentations and source codes for the entire app will be stored. 
+![AWS FREE CLOUD BOOTCAMP PROJECT GIT REPOSITORY](../_docs/images/Git-repo.JPG)
+
+- Also integrated my Git account with Gitpod, a cloud development environment that provides online virtual computers for coding and development. Its isolates you from your local environs.
+![GITPOD](../_docs/images/Gitpod.JPG)
+
+- I made sure I got familiar with the AWS CLI which runs on Linux OS by default and was able to initiate commands comfortably. Also linked my AWS CLI with my Gitpod CDE by creating a “.gitpod.yml file” which automatically integrates the AWS CLI setting into my Gitpod account.
+![GITPOD AND AWS-CLI INTEGRATION](../_docs/images/Gitpod-AWS.JPG)
 
 ## The Project Model & Architecture:
  This involves the rough sketch and overview of the project. It gives you a visual framework of the system that you are about to embark on. It is similar to the architectural design of a building. It is the framework that helps to know and understand the model representation. It involves:

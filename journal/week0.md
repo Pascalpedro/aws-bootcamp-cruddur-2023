@@ -87,9 +87,12 @@ Made sure i was able to access it using my IAM user account.
 
 ## The Project Model & Architecture:
  This involves the rough sketch and overview of the project. It gives you a visual framework of the system that you are about to embark on. It is similar to the architectural design of a building. It is the framework that helps to know and understand the model representation. It involves:
-(a) The conceptual Diagram: which represents the general structure of data required to carry out a project. It focuses mainly on “WHAT” a model represents.
-(b) The Logical Architectural Diagram: the visual representation of how a system works. It focuses mainly on “HOW” a system works and the relationship between each of the entities.
+- The conceptual Diagram: which represents the general structure of data required to carry out a project. It focuses mainly on “WHAT” a model represents.
+
+- The Logical Architectural Diagram: the visual representation of how a system works. It focuses mainly on “HOW” a system works and the relationship between each of the entities.
 
 I was able to sketch out the architectural design of this project using the Lucid Chart application which has support for AWS architectural icons for easier simulation of the project Model overview. With these designs, I was able to discover the best ideas, go through the details, demonstrate functionalities, visualize user flow, and illustrate the required interactions needed. It also helped me in discovering potential issues and the solutions that can be applied.
+![Lucid Architectural Diagram](../_docs/images/Lucid-Diagram.JPG)
+[Link to access my Diagram on the Lucid Website](https://lucid.app/lucidchart/03a6dc5a-c3c5-4771-847e-3200c35de1d3/edit?viewport_loc=112%2C-510%2C1478%2C662%2C0_0&invitationId=inv_04cf817b-9214-436e-99d0-0a7ca328ebab)
 
 Thanks & Stay tuned….

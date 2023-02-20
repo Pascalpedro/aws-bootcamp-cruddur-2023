@@ -12,14 +12,13 @@ Cost is a very sensitive issue that if not monitored might lead to the accumulat
 This involves:
 
 - Verified services that are within the AWS free tier by visiting [Free Tier](https://aws.amazon.com/free/).
-
 ![AWS Free Tier](../_docs/images/AWS-Free-Tier.JPG)
 
 - Turned on Billing alerts to receive notifications via emails by going to the [Billing Page](https://console.aws.amazon.com/billing/) navigate to the 'Billing preferences' and tick the 'Receive Billing Alerts' box.
 ![AWS Billing Preferences](../_docs/images/AWS-Billing-Pref.JPG)
 
 - Created a billing alarm system using the SNS topic which triggers notifications when a certain threshold is surpassed using [aws sns create-topic](https://docs.aws.amazon.com/cli/latest/reference/sns/create-topic.html).
-![AWS SNS TOPIC](../_docs/images/)
+![AWS SNS TOPIC](../_docs/images/AWS-SNS-TOPIC.JPG)
 
 I created a SNS Topic by
 ```sh
@@ -27,7 +26,7 @@ aws sns create-topic --name billing-alarm
 ```
 which returns a TopicARN
 
-I then created a subscription to supply the TopicARN and my Email
+I then created a subscription to supply the TopicARN and my Email using
 ```sh
 aws sns subscribe \
     --topic-arn TopicARN \
@@ -36,6 +35,7 @@ aws sns subscribe \
 ```
 
 Then, i checked my email and confirm the subscription.
+![AWS SNS SUBSCRIPTION](../_docs/images/AWS-SNS-SUB.JPG)
 
 - Configured the AWS CloudWatch metrics alarm which is a simple “pay for what you used” system by going to [aws cloudwatch put-metric-alarm](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html). It doesn’t involve an up-front commitment or minimum fee. You will be charged at the end of the month for your usage.
 

@@ -1,3 +1,3 @@
-## Frontend React JS
+# Frontend React JS
 
-Update me!
+- Whatz the update?

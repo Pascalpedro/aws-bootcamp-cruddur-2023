@@ -1,5 +1,10 @@
-# AWS CLOUD PROJECT BOOTCAMP
+# FREE AWS CLOUD PROJECT BOOTCAMP
 ## Aws-bootcamp-cruddur-2023
+
+- Application: Cruddur
+- Cohort: 2023-A1
+
+This is the starting codebase that will be used in the FREE AWS Cloud Project Bootcamp 2023
 
 Free AWS Cloud Project Bootcamp is a training program designed to escalate and help AWS Cloud Practitioners & Cloud-computing enthusiasts (who already have a fundamental knowledge of AWS cloud concepts and other IT-related scopes) get exposed to hands-on practices and real-life projects using tools and scenarios that are applicable in a working organization.
 

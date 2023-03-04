@@ -95,4 +95,23 @@ I was able to sketch out the architectural design of this project using the Luci
 ![Lucid Architectural Diagram](../_docs/images/Lucid-Diagram.JPG)
 [Link to access my Diagram on the Lucid Website](https://lucid.app/lucidchart/03a6dc5a-c3c5-4771-847e-3200c35de1d3/edit?viewport_loc=112%2C-510%2C1478%2C662%2C0_0&invitationId=inv_04cf817b-9214-436e-99d0-0a7ca328ebab)
 
+
+
+## TOOLS USED INCLUDE:
+- AWS:
+    - AWS CLOUD SHELL
+    - AWS CLI
+    - AWS CLOUDWATCH
+    - AWS BUDGET
+    - AWS SNS
+    - AWS SECURITY
+- TERMINAL:
+    - LINUX
+    - BASH 
+- GIT
+- GITPOD
+- ARCHITECTURAL DIAGRAM:
+    - LUCID CHART
+    - C4 MODEL
+- MEMENTO
 Thanks & Stay tuned….

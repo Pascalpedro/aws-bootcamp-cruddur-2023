@@ -96,7 +96,7 @@ EXPOSE ${PORT}
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 ```
 
-### To build the Container...
+#### To build the Container...
 
 Moved back to the home dir and used the 'docker build' command to build the container
 
@@ -104,7 +104,7 @@ Moved back to the home dir and used the 'docker build' command to build the cont
 docker build -t  backend-flask ./backend-flask
 ```
 
-### To run the Container...
+#### To run the Container...
 
 Used the following commands to run the container:
 ```sh

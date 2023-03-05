@@ -96,7 +96,7 @@ EXPOSE ${PORT}
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 ```
 
-### Build the Container...
+### To build the Container...
 
 Moved back to the home dir and used the 'docker build' command to build the container
 
@@ -104,7 +104,7 @@ Moved back to the home dir and used the 'docker build' command to build the cont
 docker build -t  backend-flask ./backend-flask
 ```
 
-### Run the Container...
+### To run the Container...
 
 Used the following commands to run the container:
 ```sh
@@ -206,4 +206,40 @@ To Overriding Ports:
 FLASK_ENV=production PORT=8080 docker run -p 4567:4567 -it backend-flask
 ```
 > Look at Dockerfile to see how ${PORT} is interpolated.
+
+
+### Containerized Frontend...
+
+We have to first run the "NPM Install" before building the container since it needs to copy the contents of node_modules.
+
+We move into the front-react-js dir and then,
+```sh
+cd frontend-react-js
+npm i
+```
+
+Create a Dockerfile: `frontend-react-js/Dockerfile`
+
+Append the following:
+```dockerfile
+FROM node:16.18
+
+ENV PORT=3000
+
+COPY . /frontend-react-js
+WORKDIR /frontend-react-js
+RUN npm install
+EXPOSE ${PORT}
+CMD ["npm", "start"]
+```
+
+### To Build the Container:
+```sh
+docker build -t frontend-react-js ./frontend-react-js
+```
+
+### To Run the Container:
+```sh
+docker run -p 3000:3000 -d frontend-react-js
+```
 

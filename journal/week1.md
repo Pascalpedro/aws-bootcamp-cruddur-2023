@@ -33,7 +33,7 @@ I created a "backend-flask" dir which contains the backend (data access layer of
 
 An API script was also created using the OpenAPI tool which provides a way of communication between the two applications and also tests compactibilites between softwares. 
 
-From my home dir, i moved into the backend-flask dir and using the terminal, installed the required python and it's version:
+From the root of my project, i moved into the backend-flask dir and using the terminal, installed the required python and it's version:
 
 ```sh
 cd backend-flask
@@ -69,7 +69,7 @@ env | grep _URL
 ```
 
 
-### Containerized Backend...
+### Containerized Backend!!!
 
 Firstly, clearout the two env var set up earlier to avoid interference by using:
 ```sh
@@ -96,15 +96,15 @@ EXPOSE ${PORT}
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 ```
 
-#### To build the Container...
+#### To build the Container:
 
-Moved back to the home dir and used the 'docker build' command to build the container
+Moved back to the project root and used the 'docker build' command to build the container
 
 ```sh
 docker build -t  backend-flask ./backend-flask
 ```
 
-#### To run the Container...
+#### To run the Container:
 
 Used the following commands to run the container:
 ```sh
@@ -208,7 +208,7 @@ FLASK_ENV=production PORT=8080 docker run -p 4567:4567 -it backend-flask
 > Look at Dockerfile to see how ${PORT} is interpolated.
 
 
-### Containerized Frontend...
+### Containerized Frontend!!!
 
 We have to first run the "NPM Install" before building the container since it needs to copy the contents of node_modules.
 
@@ -243,3 +243,64 @@ docker build -t frontend-react-js ./frontend-react-js
 docker run -p 3000:3000 -d frontend-react-js
 ```
 
+### Multiple Containers!!!
+Docker-compose:
+- used to start & run multiple containers as a single service (at the same time). Suppose you hv an app which required "python-flask and reactjs" or “nginx and mysql” or “redis and node app,” you could create one file which would start both the containers as a service (with some form of networking) without the need to start each one separately.
+- It also automates some of the docker cli arguments we passes to “docker run” or “docker build”.
+
+To create a docker-compose file,
+Create `docker-compose.yml` file at the root of your project and append the following scripts:
+```yaml
+version: "3.8"
+services:
+  backend-flask:
+    environment:
+      FRONTEND_URL: "https://3000-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
+      BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
+    build: ./backend-flask
+    ports:
+      - "4567:4567"
+    volumes:
+      - ./backend-flask:/backend-flask
+  frontend-react-js:
+    environment:
+      REACT_APP_BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
+    build: ./frontend-react-js
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend-react-js:/frontend-react-js
+
+# the name flag is a hack to change the default prepend folder
+# name when outputting the image names
+networks: 
+  internal-network:
+    driver: bridge
+    name: cruddur
+```
+
+#### To Build the Docker-compose Container:
+```
+docker-compose up --build
+```
+> inplace of docker build . and docker run CONTAINER_NAME
+
+#### To run the Docker-compose Container:
+```
+docker-compose up
+```
+> inplace of docker run IMAGE_NAME
+
+> We can also used the docker VS-Code extension to start and stop the docker-compose container.
+
+On the docker VS-Code extension, clicked on containers and verifed that the two services are up with its respective ports.
+
+Then, i to the port tab and:
+- made sure i unlocked the port 3000 & port 4567 for the servie to be active and public
+- opened the link for 3000 in the browser
+- launched the cruddur app
+- signed up with my credentials
+- logged into the app's DesktopHome page.
+- 
+From here, it shows that the backend is communicating with the frontend.
+- you should get back json

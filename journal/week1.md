@@ -295,13 +295,17 @@ docker-compose up
 
 On the docker VS-Code extension, clicked on containers and verifed that the two services are up with its respective ports.
 
-Then, i to the port tab and:
+Then, i moved to the port tab and:
 - made sure i unlocked the port 3000 & port 4567 for the servie to be active and public
 - opened the link for 3000 in the browser
 - launched the cruddur app
 - signed up with my credentials
 - logged into the app's DesktopHome page.
 - Confirmed that the backend is in communication with the frontend.
+
+I also wrote a new api endpoint [OpenAPI-3.0.yml](https://github.com/Pascalpedro/aws-bootcamp-cruddur-2023/blob/3cad84b9f2402ca5cfb85d6470dbfbc73cb65d70/openapi-3.0.yml) using Open API tools which provides a way of communication between the two applications and also tests compactibilites between softwares.
+- I implemented a backend endpoint.
+- Implemented a frontend ui
 
 
 ### DynamoDB Local and Postgres

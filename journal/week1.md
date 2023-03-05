@@ -23,7 +23,7 @@ i logged into my [gitpod CDE](https://gitpod.io/#https://github.com/Pascalpedro/
   - Docker
   - Git
   - markdownlint
-  - OpenAPI
+  - OpenAPI swagger Editor
   - PostgreSQL
   - Python 
 
@@ -297,15 +297,9 @@ On the docker VS-Code extension, clicked on containers and verifed that the two 
 
 Then, i moved to the port tab and:
 - made sure i unlocked the port 3000 & port 4567 for the servie to be active and public
-- opened the link for 3000 in the browser
+- opened the link for port 3000 in the browser
 - launched the cruddur app
-- signed up with my credentials
-- logged into the app's DesktopHome page.
-- Confirmed that the backend is in communication with the frontend.
-
-I also wrote a new api endpoint [OpenAPI-3.0.yml](https://github.com/Pascalpedro/aws-bootcamp-cruddur-2023/blob/3cad84b9f2402ca5cfb85d6470dbfbc73cb65d70/openapi-3.0.yml) using Open API tools which provides a way of communication between the two applications and also tests compactibilites between softwares.
-- I implemented a backend endpoint.
-- Implemented a frontend ui
+- Confirmed that the backend is in communication with the frontend
 
 
 ### DynamoDB Local and Postgres
@@ -383,15 +377,31 @@ volumes:
 ```
 
 
+### API ENDPOINTS
+I also appended a new api endpoint for the Notification tab for the Frontend UI in the `backend-flask/openapi-3.0.yml` dir using Open API tools which provides a way of communication between the two applications and also tests compactibilites between softwares.
+To implement the backend endpoint and a frontend ui for the notification tab, i:
+
+- Ran a `docker-compose up` command
+- Activated the ports of each of the four scripts
+- opened the link for port 3000 in the browser
+- launched the cruddur app
+- signed up with my credentials and Authentication
+- back to my `backend-flask/openapi-3.0.yml`, i appended an `/api/activities/notifications` block of codes
+- moved to my `backend-flask/app.py` and added some notification services lines of codes
+- editted some other scripts to include the notification services.
+- And them logged back into my cruddur app and verified that the notification tab is now working.
+
+
 
 ## TOOLS USED INCLUDE:
 - Web Browser
 - Gitpod CDE
+- Dockerhub
 - VSCode extensions:
     - Docker
     - Git
     - markdownlint
-    - OpenAPI
+    - OpenAPI Swagger Editor
     - PostgreSQL
     - Python 
 - Terminal:

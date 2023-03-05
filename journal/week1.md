@@ -21,7 +21,7 @@ i logged into my [gitpod CDE](https://gitpod.io/#https://github.com/Pascalpedro/
 
 - Inside my Gitpod CDE, i installed some extensions for more functionalities such as:
   - Docker
-  - Github
+  - Git
   - markdownlint
   - OpenAPI
   - PostgreSQL
@@ -301,6 +301,40 @@ Then, i to the port tab and:
 - launched the cruddur app
 - signed up with my credentials
 - logged into the app's DesktopHome page.
-- 
-From here, it shows that the backend is communicating with the frontend.
-- you should get back json
+- Confirm that the backend is in communication with the frontend.
+
+
+I also added two database management tools into the `docker-compose.yml` file.
+These two scripts, `dynamoBD local` and `postgres` will interact with the NoSQL and SQL databases respectively.
+
+
+
+
+
+## TOOLS USED INCLUDE:
+- Web Browser
+- Gitpod CDE
+- VSCode extensions:
+    - Docker
+    - Git
+    - markdownlint
+    - OpenAPI
+    - PostgreSQL
+    - Python 
+- Terminal:
+    - Linux
+    - Bash
+- Scripting tools:
+    - Python-flask
+    - Reactjs
+- Database Management tools:
+    - DynamoDB Local
+    - Postgres
+- Open API
+- Docker Container security tools:
+    - AWS Inspectors
+    - AWS Secret manager
+    - Hashicorp vault
+    - Snyk Open source tool (for image venurability scanning)
+
+

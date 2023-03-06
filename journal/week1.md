@@ -117,6 +117,12 @@ docker run --rm -p 4567:4567 -it  -e FRONTEND_URL -e BACKEND_URL backend-flask
 unset FRONTEND_URL="*"
 unset BACKEND_URL="*"
 ```
+The docker run command:
+```sh
+docker run = docker create + docker start
+docker create IMAGE_NAME
+docker start -a CONTAINER_ID
+```
 
 To run the container in the background:
 ```sh
@@ -135,7 +141,16 @@ To list all the running containers:
 
 ```sh
 docker ps
-docker ps -a
+```
+To list all containers ever created on the machine:
+```sh
+docker ps "-a or --all"
+```
+
+
+To verify your docker version:
+```sh
+docker version
 ```
 
 To list all images available:
@@ -145,6 +160,10 @@ docker images
 To find the details of a container:
 ```sh
 docker inspect CONTAINER_ID or CONTAINER_NAME
+```
+To search for images on docker hub:
+```sh
+docker search IMAGE_NAME
 ```
 
 To get logs from a container:
